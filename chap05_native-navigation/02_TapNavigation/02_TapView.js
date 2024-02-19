@@ -1,0 +1,20 @@
+import { View } from "react-native";
+
+const TapView = ({router, navigation}) =>{
+    const stackPage = () =>{
+        navigation.navigate("StackComponent");
+    }
+
+    return(
+        <View>
+            <Text>
+            새로운 화면
+            </Text>
+            <View>
+                <Button title = "Stack이동" onPress={stackPage}/>
+            </View>
+        </View>
+    )
+}
+
+export default TapView;
